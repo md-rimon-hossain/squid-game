@@ -450,8 +450,8 @@ const App: React.FC = () => {
       ) : (
         <>
           {/* Background Gradients */}
-          <div className="absolute inset-0 bg-gradient-to-br from-[#FF046B] via-[#F6E7D4] to-[#FF046B]"></div>
-          <div className="absolute inset-0 bg-gradient-to-tl from-[#FF046B] via-[#F6E7D4] to-[#FF046B] opacity-30"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-[#e54b81] via-[#e262b5] to-[#e54b81]"></div>
+          {/* <div className="absolute inset-0 bg-gradient-to-tl from-[#e54b81] via-[#e262b5] to-[#e54b81] opacity-30"></div> */}
 
           <div className="relative pt-2 md:pt-14 w-full text-white h-screen font-bold flex flex-col max-w-xl">
             {/* Conditional Rendering of Pages */}
@@ -466,6 +466,7 @@ const App: React.FC = () => {
                       <p className="text-sm">{firstName} (CEO)</p>
                     </div>
                   </div>
+
                   <div className="flex items-center justify-between space-x-4 mt-1">
                     <div className="flex items-center w-1/3">
                       <div className="w-full">
@@ -493,8 +494,8 @@ const App: React.FC = () => {
                   </div>
                 </div>
 
-                <div className="flex-grow h-screen mt-1 bg-[#FF046B] rounded-t-[48px] relative top-glow z-0">
-                  <div className="absolute flex flex-col h-auto top-[2px] left-0 right-0 bottom-0 bg-[#000000] rounded-t-[46px]">
+                <div className="flex-grow h-screen mt-1 bg-[#FF046B] rounded-t-[48px] relative  z-0">
+                  <div className="absolute flex flex-col h-auto top-[2px] left-0 right-0 bottom-0 bg-gradient-to-b from-[#FF3D7C] via-[#FF819E] to-[#F6E5D3] rounded-t-[46px]">
                     <div className="px-4 mt-2 flex justify-between gap-2">
                       {/* Daily Reward */}
                       <div
@@ -574,14 +575,14 @@ const App: React.FC = () => {
 
                     <div className="px-4 h-[400px] md:pt-40 flex justify-center items-center">
                       <div
-                        className="w-[240px] h-[240px] md:w-65 md:h-65 p-0 rounded-full cursor-pointer circle-outer"
+                        className="w-[240px] h-[240px]  p-0 rounded-full cursor-pointer circle-outer"
                         onClick={handleCardClick}
                       >
-                        <div className="w-[240px] h-[240px] md:w-full md:h-full rounded-full circle-inner">
+                        <div className="w-[240px] h-[240px]  rounded-full circle-inner">
                           <img
                             src={main}
                             alt="Main Character"
-                            className="w-[240px] h-[240px] md:w-full md:h-full"
+                            className="w-[240px] h-[240px] "
                           />
                         </div>
                       </div>
@@ -596,7 +597,7 @@ const App: React.FC = () => {
           </div>
 
           {/* Bottom Navigation */}
-          <div className="fixed bottom-0 left-1/2 transform -translate-x-1/2 w-[calc(100%-2rem)] max-w-xl bg-[#000000] flex justify-around items-center z-50 rounded-3xl text-xs">
+          <div className="fixed bottom-0 left-1/2 transform -translate-x-1/2 w-[calc(100%)] max-w-xl bg-[#000000] flex justify-around items-center z-50 rounded-t-3xl text-xs">
             {/* Nav Items */}
             <div
               className={`nav-item text-center text-[#E4DFDC] ${

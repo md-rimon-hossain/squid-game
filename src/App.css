@@ -84,22 +84,12 @@
 }
 
 .circle-inner img {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
   border-radius: 50%;
 }
 
 /* Adjustments for larger screens (e.g., PC) */
 @media (min-width: 768px) {
-  .circle-outer {
-    width: 100px; /* Adjust for PC */
-    height: 100px; /* Adjust for PC */
-    max-width: 100px; /* Fixed size for PC */
-    max-height: 100px; /* Fixed size for PC */
-    padding: 20px; /* Adjust padding for PC */
-    margin-top: -100px; /* Move the circle further upward on PC */ /* <-- Adjusted */
-  }
 
   .upper-part {
     margin-top: -52px; /* Move the upper part further upward on PC */ /* <-- Adjusted */
