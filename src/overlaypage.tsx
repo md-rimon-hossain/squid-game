@@ -121,9 +121,8 @@ const overlaypage: React.FC<overlaypageProps> = ({ closeOverlay }) => {
   const FinalPage3 = () => {
     return (
       <div
-        className="fixed inset-0 flex flex-col justify-between items-center"
+        className="fixed inset-0 flex flex-col justify-between items-center bg-gradient-to-b  from-[#FF3D7C] via-[#FF819E] to-[#F6E5D3]"
         style={{
-          backgroundColor: "black",
           minHeight: "100vh",
           color: "white",
           textAlign: "center",
@@ -173,7 +172,7 @@ const overlaypage: React.FC<overlaypageProps> = ({ closeOverlay }) => {
         {/* Bottom Text */}
         <div className="mb-6">
           <p className="text-xs"></p>
-          <p className="text-xs mt-1">Rewarded</p>
+          <p className=" mt-1">Rewarded</p>
         </div>
 
         {/* Finish Button */}
@@ -195,13 +194,12 @@ const overlaypage: React.FC<overlaypageProps> = ({ closeOverlay }) => {
   const FinalPage2 = () => {
     return (
       <div
-        className="fixed inset-0 flex flex-col justify-between items-center"
+        className="fixed inset-0 flex flex-col justify-between items-center bg-gradient-to-b  from-[#FF3D7C] via-[#FF819E] to-[#F6E5D3]"
         style={{
-          backgroundColor: 'black',
-          minHeight: '100vh',
-          color: 'white',
-          textAlign: 'center',
-          padding: '0 16px',
+          minHeight: "100vh",
+          color: "white",
+          textAlign: "center",
+          padding: "0 16px",
           zIndex: 9999,
         }}
       >
@@ -209,41 +207,46 @@ const overlaypage: React.FC<overlaypageProps> = ({ closeOverlay }) => {
         <div className="mt-20 flex justify-center items-center space-x-2">
           <div
             style={{
-              height: '4px',
-              backgroundColor: 'gray', // First line is gray
-              width: '50px',
+              height: "4px",
+              backgroundColor: "gray", // First line is gray
+              width: "50px",
             }}
           ></div>
           <div
             style={{
-              height: '4px',
-              backgroundColor: 'white', // Second line is white
-              width: '80px',
+              height: "4px",
+              backgroundColor: "white", // Second line is white
+              width: "80px",
             }}
           ></div>
           <div
             style={{
-              height: '4px',
-              backgroundColor: 'gray', // Third line is gray
-              width: '50px',
+              height: "4px",
+              backgroundColor: "gray", // Third line is gray
+              width: "50px",
             }}
           ></div>
         </div>
 
         {/* Top Text */}
         <div className="mt-4">
-        <h1 className="text-2xl font-bold">You are a legend!</h1>
-        {/* Conditionally render based on the value of 'isStar' */}
-        {isStar ? (
-          <p className="text-base mt-1">Telegram star!!</p>
-        ) : (
-          <p className="text-base mt-1">Star doesn't matter!!</p>
-        )}
-      </div>
+          <h1 className="text-2xl font-bold">You are a legend!</h1>
+          {/* Conditionally render based on the value of 'isStar' */}
+          {isStar ? (
+            <p className="text-base mt-1">Telegram star!!</p>
+          ) : (
+            <p className="text-base mt-1">Star doesn't matter!!</p>
+          )}
+        </div>
 
         {/* Central Image (replacing the 10) */}
         <div className="flex flex-col items-center">
-          <img src={middleImage} alt="Middle Image" className="w-40 h-40 z-50" /> {/* Replacing 10 with image */}
+          <img
+            src={middleImage}
+            alt="Middle Image"
+            className="w-40 h-40 z-50"
+          />{" "}
+          {/* Replacing 10 with image */}
         </div>
 
         {/* Bottom Text */}
@@ -256,7 +259,7 @@ const overlaypage: React.FC<overlaypageProps> = ({ closeOverlay }) => {
         <button
           onClick={() => setShowFinalPage3(true)} // When clicking continue, go to finalPage3
           className="px-6 py-3 bg-white text-black rounded-full text-lg font-semibold mb-8"
-          style={{ width: '80%' }}
+          style={{ width: "80%" }}
         >
           Continue
         </button>
@@ -268,13 +271,13 @@ const overlaypage: React.FC<overlaypageProps> = ({ closeOverlay }) => {
   const FinalPage = () => {
     return (
       <div
-        className="fixed inset-0 flex flex-col justify-between items-center"
+        className="fixed inset-0 flex flex-col justify-between items-center bg-gradient-to-b  from-[#FF3D7C] via-[#FF819E] to-[#F6E5D3]"
         style={{
-          backgroundColor: 'black',
-          minHeight: '100vh',
-          color: 'white',
-          textAlign: 'center',
-          padding: '0 16px',
+    
+          minHeight: "100vh",
+          color: "white",
+          textAlign: "center",
+          padding: "0 16px",
           zIndex: 9999,
         }}
       >
@@ -282,23 +285,23 @@ const overlaypage: React.FC<overlaypageProps> = ({ closeOverlay }) => {
         <div className="mt-20 flex justify-center items-center space-x-2">
           <div
             style={{
-              height: '4px',
-              backgroundColor: 'white', // First line is white
-              width: '50px',
+              height: "4px",
+              backgroundColor: "white", // First line is white
+              width: "50px",
             }}
           ></div>
           <div
             style={{
-              height: '4px',
-              backgroundColor: 'gray', // Second line is gray
-              width: '80px',
+              height: "4px",
+              backgroundColor: "gray", // Second line is gray
+              width: "80px",
             }}
           ></div>
           <div
             style={{
-              height: '4px',
-              backgroundColor: 'gray', // Third line is gray
-              width: '50px',
+              height: "4px",
+              backgroundColor: "gray", // Third line is gray
+              width: "50px",
             }}
           ></div>
         </div>
@@ -311,13 +314,16 @@ const overlaypage: React.FC<overlaypageProps> = ({ closeOverlay }) => {
 
         {/* Central Large Text */}
         <div className="flex flex-col items-center">
-          <div className="text-[4.5rem] font-extrabold leading-none">{yearsAgo}</div> {/* Dynamically using the variable */}
+          <div className="text-[4.5rem] font-extrabold leading-none">
+            {yearsAgo}
+          </div>{" "}
+          {/* Dynamically using the variable */}
           <p className="text-2xl mt-1">years ago</p>
         </div>
 
         {/* Bottom Text */}
         <div className="mb-6">
-        <p className="text-xs">Your account number is #{userId}.</p>
+          <p className="text-xs">Your account number is #{userId}.</p>
           <p className="text-xs mt-1">🔥</p>
         </div>
 
@@ -325,7 +331,7 @@ const overlaypage: React.FC<overlaypageProps> = ({ closeOverlay }) => {
         <button
           onClick={() => setShowFinalPage2(true)} // When clicking continue, go to finalPage2
           className="px-6 py-3 bg-white text-black rounded-full text-lg font-semibold mb-8"
-          style={{ width: '80%' }}
+          style={{ width: "80%" }}
         >
           Continue
         </button>
@@ -348,7 +354,7 @@ const overlaypage: React.FC<overlaypageProps> = ({ closeOverlay }) => {
 
   // Main page content (original content)
   return (
-    <div className="z-50 fixed inset-0 bg-black flex flex-col justify-start items-center font-poppins">
+    <div className="z-50 fixed inset-0 bg-gradient-to-b  from-[#FF3D7C] via-[#FF819E] to-[#F6E5D3] flex flex-col justify-start items-center font-poppins">
       {/* Animation and checklist page */}
       <div className="relative text-center text-white w-80">
         <h1 className="text-4xl font-extrabold mt-[10vh] mb-32 text-white">
@@ -388,7 +394,7 @@ const overlaypage: React.FC<overlaypageProps> = ({ closeOverlay }) => {
                 {" "}
                 {/* Reduced bar height and margin */}
                 <div
-                  className={`h-full bg-[#FF046B] transition-width duration-1000 ease-linear ${
+                  className={`h-full bg-white transition-width duration-1000 ease-linear ${
                     completed[index] ? "w-full" : "w-0"
                   }`}
                 />

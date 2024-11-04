@@ -450,7 +450,7 @@ const App: React.FC = () => {
       ) : (
         <>
           {/* Background Gradients */}
-          <div className="absolute inset-0 bg-gradient-to-br from-[#e54b81] via-[#e262b5] to-[#e54b81]"></div>
+          <div className="absolute inset-0 bg-gradient-to-br  from-[#FF3D7C] via-[#FF819E] to-[#F6E5D3]"></div>
           {/* <div className="absolute inset-0 bg-gradient-to-tl from-[#e54b81] via-[#e262b5] to-[#e54b81] opacity-30"></div> */}
 
           <div className="relative pt-2 md:pt-14 w-full text-white h-screen font-bold flex flex-col max-w-xl">
@@ -494,8 +494,8 @@ const App: React.FC = () => {
                   </div>
                 </div>
 
-                <div className="flex-grow h-screen mt-1 bg-[#FF046B] rounded-t-[48px] relative  z-0">
-                  <div className="absolute flex flex-col h-auto top-[2px] left-0 right-0 bottom-0 bg-gradient-to-b from-[#FF3D7C] via-[#FF819E] to-[#F6E5D3] rounded-t-[46px]">
+                <div className="flex-grow h-screen mt-1 bg-[#FF046B] rounded-t-[32px] relative  z-0">
+                  <div className="absolute flex flex-col h-auto top-[2px] left-0 right-0 bottom-0 bg-gradient-to-b from-[#FF3D7C] via-[#FF819E] to-[#F6E5D3] rounded-t-[30px]">
                     <div className="px-4 mt-2 flex justify-between gap-2">
                       {/* Daily Reward */}
                       <div
